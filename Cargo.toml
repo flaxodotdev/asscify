@@ -1,6 +1,6 @@
 [package]
 name = "asscify"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Beautiful terminal UI for converting images to ASCII art"
 license = "MIT"
