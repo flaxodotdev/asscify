@@ -1,0 +1,27 @@
+[package]
+name = "asscify"
+version = "0.1.0"
+edition = "2021"
+description = "Beautiful terminal UI for converting images to ASCII art"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/flaxodotdev/asscify"
+homepage = "https://github.com/flaxodotdev/asscify"
+documentation = "https://github.com/flaxodotdev/asscify#readme"
+keywords = ["ascii", "art", "tui", "image", "terminal"]
+categories = ["command-line-utilities", "multimedia::images"]
+authors = ["flaxodotdev"]
+exclude = ["target/", "samples/*.ascii.txt"]
+
+[dependencies]
+anyhow = "1.0.104"
+clap = { version = "4.6.9", features = ["derive"] }
+crossterm = "0.29.0"
+image = "0.25.10"
+ratatui = "0.30.2"
+thiserror = "2.0.21"
+walkdir = "2.5.1"
+
+[[bin]]
+name = "asscify"
+path = "src/main.rs"
